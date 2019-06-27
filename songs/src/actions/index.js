@@ -2,7 +2,7 @@
 export const selectedSong = (song) => {
     // Return an action
     return {
-        type: 'SELECTED_SONG', // <-- REQUIRED
+        type: 'SONG_SELECTED', // <-- REQUIRED
         payload: song, // <-- OPTIONAL
     };
 };
