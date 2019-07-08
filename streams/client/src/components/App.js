@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 const PageOne = () => <div>Home</div>;
 const PageTwo = () => <div>About</div>;
 const PageThree = () => <div>Contact</div>;
+const F = () => <div>Contact</div>;
 
 const App = () => {
   return (
