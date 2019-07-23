@@ -7,8 +7,6 @@
     "start": "json-server -p 3001 -w db.json"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "json-server": "^0.15.0",
-    "redux-thunk": "^2.3.0"
+    "json-server": "^0.15.0"
   }
 }
