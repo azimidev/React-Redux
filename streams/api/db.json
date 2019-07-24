@@ -26,6 +26,18 @@
       "description": "Fifth description",
       "userId": "103519295749667802617",
       "id": 5
+    },
+    {
+      "title": "Programatic redirect",
+      "description": "You should not see this after creation!",
+      "userId": "103519295749667802617",
+      "id": 6
+    },
+    {
+      "title": "Redirect test",
+      "description": "Please redirect.",
+      "userId": "103519295749667802617",
+      "id": 7
     }
   ]
 }
