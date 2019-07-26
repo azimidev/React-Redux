@@ -8,6 +8,12 @@ import StreamShow from './streams/StreamShow';
 import Header from './Header';
 import history from '../history';
 
+/**
+ * With React Router, each component
+ * needs to be designed to work in isolation
+ * ( fetch it's own data! )
+ */
+
 const App = () => {
   return (
     <div className="ui container">
