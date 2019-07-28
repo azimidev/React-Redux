@@ -2,11 +2,11 @@ import React from 'react'
 import Modal from '../Modal';
 import history from '../../history';
 
-export default (props) => {
+export default props => {
     const actions = (
         <React.Fragment>
             <button className="ui negative button">Delete</button>
-            <button className="ui cancel button" onClick={(e) => history.push('/')}>Cancel</button>
+            <button className="ui cancel button" onClick={() => history.push('/')}>Cancel</button>
         </React.Fragment>
     );
     return (
@@ -15,6 +15,7 @@ export default (props) => {
                 title="Delete Stream"
                 content="Are you sure you want to delete this stream?"
                 actions={actions}
+                onDismiss={() => history.push('/')}
             />
         </div>
     );
