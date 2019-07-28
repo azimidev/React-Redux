@@ -1,7 +1,7 @@
 import React from 'react'
 import Modal from '../Modal';
 
-export default function StreamDelete() {
+export default (props) => {
     return (
         <div>
             <Modal />
