@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/" component={StreamList} exact />
           <Route path="/stream/new" component={StreamCreate} />
           <Route path="/stream/edit/:id" component={StreamEdit} />
-          <Route path="/stream/delete" component={StreamDelete} />
+          <Route path="/stream/delete/:id" component={StreamDelete} />
           <Route path="/stream/show" component={StreamShow} />
         </div>
       </Router>
