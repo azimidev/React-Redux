@@ -1,0 +1,12 @@
+{
+  "name": "rtmpserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-media-server": "^2.1.2"
+  }
+}
