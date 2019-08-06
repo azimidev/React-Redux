@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Not needed a default value:
+// export default React.createContext('english');
+
 export default React.createContext('english');
 
 // WHERE CAN I GET MY SOURCE OF DATA?
