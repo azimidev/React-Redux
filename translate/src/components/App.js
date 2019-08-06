@@ -10,7 +10,7 @@ export default class App extends Component {
             <div className='ui container'>
                 <LanguageStore>
                     <LanguageSelector />
-                    <ColorContext.Provider>
+                    <ColorContext.Provider value="red">
                         <UserCreate />
                     </ColorContext.Provider>
                 </LanguageStore>

@@ -11,11 +11,11 @@ export class LanguageSelector extends Component {
                 <p>Select a language:</p>
                 <i
                     className='flag us'
-                    onClick={() => this.context.onLanguageChange('english', 'primary')}
+                    onClick={() => this.context.onLanguageChange('english')}
                 />
                 <i
                     className='flag ir'
-                    onClick={() => this.context.onLanguageChange('persian', 'red')}
+                    onClick={() => this.context.onLanguageChange('persian')}
                 />
             </div>
         );
