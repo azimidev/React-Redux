@@ -17,6 +17,7 @@ export default class App extends Component {
                     <i className='flag us' onClick={() => this.onLanguageChange('english')} />
                     <i className='flag ir' onClick={() => this.onLanguageChange('persian')} />
                 </div>
+                {/* 1. Provider */}
                 <LanguageContext.Provider value={this.state.language}>
                     <UserCreate />
                 </LanguageContext.Provider>
