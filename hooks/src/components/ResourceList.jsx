@@ -4,16 +4,17 @@ import axios from "axios";
 const ResourceList = ({ resource }) => {
     const [resources, setResources] = useState([]);
 
-    const fetchResource = async resource => {
-        const { data } = await axios.get(`https://jsonplaceholder.typicode.com/${resource}`);
-
-        setResources(data);
-    };
-
-    // lifectcle hook replacement
+    // LifeCtcle Hook Replacement
     useEffect(() => {
-        fetchResource(resource);
-    }, [resource]); // --> if recourse changes this component will re-render
+        // 1:
+        // axios.get(`https://jsonplaceholder.typicode.com/${resource}`).then(({ data }) => setResources(data))(
+
+        // 2:
+        (async resource => {
+            const { data } = await axios.get(`https://jsonplaceholder.typicode.com/${resource}`);
+            setResources(data);
+        })(resource);
+    }, [resource]); // --> if [recourse] changes, this component will re-render
 
     return <div>{resources.length}</div>;
 };
