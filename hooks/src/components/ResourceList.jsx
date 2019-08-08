@@ -1,20 +1,8 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+import useResources from "./useResources";
 
 const ResourceList = ({ resource }) => {
-    const [resources, setResources] = useState([]);
-
-    // LifeCtcle Hook Replacement
-    useEffect(() => {
-        // 1:
-        // axios.get(`https://jsonplaceholder.typicode.com/${resource}`).then(({ data }) => setResources(data))(
-
-        // 2:
-        (async resource => {
-            const { data } = await axios.get(`https://jsonplaceholder.typicode.com/${resource}`);
-            setResources(data);
-        })(resource);
-    }, [resource]); // --> if [recourse] changes, this component will re-render
+    const resources = useResources(resource);
 
     return (
         <ul>
