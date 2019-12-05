@@ -10,12 +10,11 @@ export const fetchPostsAndUsers = () => async (dispatch, getState) => {
     // REFACTOR: use Loadash chain()
 
     _.chain(getState().posts)
-        .map('userId')
-        .uniq()
-        .forEach(id => dispatch(fetchUser(id)))
-        .value();
-}
-
+     .map('userId')
+     .uniq()
+     .forEach(id => dispatch(fetchUser(id)))
+     .value();
+};
 
 export const fetchPosts = () => async dispatch => {
     const response = await jsonPlaceHolder.get('/posts');
@@ -26,7 +25,7 @@ export const fetchPosts = () => async dispatch => {
 export const fetchUser = id => async dispatch => _fetchUser(id, dispatch);
 
 const _fetchUser = _.memoize(async (id, dispatch) => {
-    const response = await jsonPlaceHolder.get(`/users/${id}`);
+    const response = await jsonPlaceHolder.get(`/users/${ id }`);
 
     dispatch({ type: 'FETCH_USER', payload: response.data });
 });
