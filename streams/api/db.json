@@ -1,0 +1,24 @@
+{
+  "streams": [
+    {
+      "title": "first title",
+      "description": "first description",
+      "id": 1
+    },
+    {
+      "title": "second title",
+      "description": "second description",
+      "id": 2
+    },
+    {
+      "title": "third title",
+      "description": "third description",
+      "id": 3
+    },
+    {
+      "title": "Update title",
+      "description": "Update description",
+      "id": 8
+    }
+  ]
+}
